@@ -12,4 +12,7 @@ store.save
 store = Store.new(name: "Gastown", annual_revenue: 190000, mens_apparel: true, womens_apparel: false)
 store.save
 
-puts store.name, store.annual_revenue, store.mens_apparel, store.womens_apparel
+all_stores = Store.all
+all_stores.each do |store|
+  puts store.name
+end
